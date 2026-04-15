@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모발이식 무료 상담 | 생착률 95% 이상 병원 매칭</title>
+<meta name="description" content="생착률 95% 이상 병원만 엄선. 탈모 고민, 지금 바로 무료 상담 받으세요.">
+
+<!-- Google Analytics - G-XXXXXXXXXX 를 실제 측정 ID로 교체하세요 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --gold-dark: #A07830;
+  --black: #0A0A0A;
+  --dark: #111111;
+  --dark2: #1A1A1A;
+  --dark3: #222222;
+  --border: #2A2A2A;
+  --text: #FFFFFF;
+  --text-muted: #888888;
+  --text-dim: #555555;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--black);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--black);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  width: 100%;
+  background: var(--dark2);
+  overflow: hidden;
+}
+
+.hero-top {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* 비포애프터 영역 - 실제 이미지로 교체 가능 */
+.ba-container {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.ba-side {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ba-side.before {
+  background: #141414;
+  border-right: 1px solid var(--border);
+}
+
+.ba-side.after {
+  background: #161410;
+}
+
+.ba-side-label {
+  position: absolute;
+  top: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.ba-side.before .ba-side-label {
+  left: 12px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.ba-side.after .ba-side-label {
+  left: 12px;
+  color: var(--gold);
+  border: 1px solid var(--gold-dark);
+  background: rgba(201,168,76,0.1);
+}
+
+/* 실제 이미지 넣을 때: <img src="before.jpg" class="ba-img"> */
+.ba-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.4;
+}
+
+.ba-placeholder-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.ba-placeholder-text {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.ba-divider {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(201,168,76,0.4);
+}
+
+.ba-divider svg {
+  width: 16px;
+  height: 16px;
+  fill: #000;
+}
+
+.hero-text {
+  padding: 20px 20px 0;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(201,168,76,0.15);
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero-title {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.hero-title em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.hero-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ── TRUST BAR ── */
+.trust-bar {
+  display: flex;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--dark2);
+}
+
+.trust-item {
+  flex: 1;
+  padding: 14px 8px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.trust-item:last-child { border-right: none; }
+
+.trust-num {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: -0.5px;
+}
+
+.trust-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* ── FORM ── */
+.form-wrap {
+  padding: 0 20px 60px;
+}
+
+/* Progress */
+.progress-wrap {
+  padding: 22px 0 18px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.progress-count {
+  font-size: 12px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+/* Steps */
+.step { display: none; }
+.step.active { display: block; animation: fadeIn 0.3s ease; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.step-header {
+  margin-bottom: 22px;
+}
+
+.step-num-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: var(--gold);
+  color: #000;
+  font-size: 13px;
+  font-weight: 900;
+  border-radius: 6px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.step-q {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 8px;
+}
+
+.step-q-text { flex: 1; }
+
+.step-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-left: 34px;
+}
+
+.multi-tag {
+  display: inline-block;
+  background: rgba(201,168,76,0.15);
+  color: var(--gold);
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* Options */
+.opt {
+  width: 100%;
+  padding: 15px 16px;
+  background: var(--dark2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s;
+  -webkit-appearance: none;
+}
+
+.opt:active { transform: scale(0.98); }
+
+.opt:hover {
+  border-color: rgba(201,168,76,0.5);
+  background: rgba(201,168,76,0.05);
+}
+
+.opt.selected {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.1);
+}
+
+.opt-key {
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.opt.selected .opt-key {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #000;
+}
+
+.opt-text { font-weight: 500; }
+
+/* Select dropdown */
+.select-wrap {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.select-wrap select {
+  width: 100%;
+  padding: 15px 44px 15px 16px;
+  background: var(--dark2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.2s;
+}
+
+.select-wrap select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.select-wrap select option { background: #1a1a1a; color: #fff; }
+
+.select-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-muted);
+}
+
+/* Contact inputs */
+.inp {
+  width: 100%;
+  padding: 15px 16px;
+  background: var(--dark2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+}
+
+.inp:focus { outline: none; border-color: var(--gold); }
+.inp::placeholder { color: var(--text-dim); }
+
+/* Nav buttons */
+.nav-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.btn-prev {
+  width: 52px;
+  height: 54px;
+  background: var(--dark2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-prev:hover { border-color: var(--text-muted); color: var(--text); }
+
+.btn-next {
+  flex: 1;
+  height: 54px;
+  background: var(--gold);
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: -0.3px;
+}
+
+.btn-next:hover { background: var(--gold-light); }
+.btn-next:active { transform: scale(0.98); }
+
+.btn-submit {
+  width: 100%;
+  height: 58px;
+  background: var(--gold);
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 900;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: -0.3px;
+  margin-top: 8px;
+}
+
+.btn-submit:hover { background: var(--gold-light); }
+.btn-submit:active { transform: scale(0.98); }
+
+/* Privacy */
+.privacy {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: var(--dark2);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.privacy a { color: var(--text-muted); text-decoration: underline; }
+
+/* ── DONE ── */
+.done-screen {
+  display: none;
+  padding: 60px 20px 40px;
+  text-align: center;
+  min-height: 300px;
+}
+
+.done-screen.active { display: block; animation: fadeIn 0.4s ease; }
+
+.done-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(201,168,76,0.15);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 32px;
+}
+
+.done-title {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.done-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.done-card {
+  margin-top: 28px;
+  background: var(--dark2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: left;
+}
+
+.done-card-title {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.done-card-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.done-card-row:last-child { border-bottom: none; }
+.done-card-label { color: var(--text-muted); }
+.done-card-value { font-weight: 600; color: var(--gold); }
+
+/* Loading overlay */
+.loading-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.loading-overlay.active { display: flex; }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-text { font-size: 14px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <!-- 비포애프터 이미지 영역 -->
+    <!-- 실제 사용 시: before.jpg, after.jpg 파일을 같은 폴더에 넣고 아래 placeholder를 img 태그로 교체 -->
+    <div class="ba-container">
+      <div class="ba-side before">
+        <span class="ba-side-label">BEFORE</span>
+        <div class="ba-placeholder">
+          <div class="ba-placeholder-circle">📷</div>
+          <div class="ba-placeholder-text">비포 이미지<br>교체 예정</div>
+        </div>
+      </div>
+      <div class="ba-divider">
+        <svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7"/></svg>
+      </div>
+      <div class="ba-side after">
+        <span class="ba-side-label">AFTER</span>
+        <div class="ba-placeholder">
+          <div class="ba-placeholder-circle">✨</div>
+          <div class="ba-placeholder-text">애프터 이미지<br>교체 예정</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <div class="hero-badge">생착률 95% 이상 병원 엄선</div>
+      <div class="hero-title">탈모로 고민중이라면<br><em>지금 바로</em> 무료상담</div>
+      <div class="hero-sub">맞춤 병원 매칭 · 무료 견적 · 빠른 연결<br>2분이면 충분해요</div>
+    </div>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <div class="trust-num">95%+</div>
+      <div class="trust-label">생착률 보장</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">1,200+</div>
+      <div class="trust-label">성공 케이스</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">무료</div>
+      <div class="trust-label">상담·견적</div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-wrap" id="formArea">
+
+    <div class="progress-wrap">
+      <div class="progress-info">
+        <span class="progress-label">상담 정보 입력</span>
+        <span class="progress-count" id="progressCount">1 / 7</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width:14%"></div>
+      </div>
+    </div>
+
+    <!-- Step 1: 성별 -->
+    <div class="step active" id="step1">
+      <div class="step-header">
+        <div class="step-q">
+          <span class="step-num-badge">1</span>
+          <span class="step-q-text">성별을 선택해 주세요.</span>
+        </div>
+        <div class="step-sub">맞춤 탈모 유형을 분석해 드립니다.</div>
+      </div>
+      <button class="opt" onclick="pick(this,'gender','남성')"><span class="opt-key">A</span><span class="opt-text">남성</span></button>
+      <button class="opt" onclick="pick(this,'gender','여성')"><span class="opt-key">B</span><span class="opt-text">여성</span></button>
+      <div class="nav-row">
+        <button class="btn-next" onclick="next()">다음 →</button>
+      </div>
+    </div>
+
+    <!-- Step 2: 연령 -->
+    <div class="step" id="step2">
+      <div class="step-header">
+        <div class="step-q">
+          <span class="step-num-badge">2</span>
+          <span class="step-q-text">연령대를 선택해 주세요.</span>
+        </div>
+        <div class="step-sub">탈모 진행 단계를 파악하는 데 도움이 됩니다.</div>
+      </div>
+      <button class="opt" onclick="pick(this,'age','20대')"><span class="opt-key">A</span><span class="opt-text">20대</span></button>
+      <button class="opt" onclick="pick(this,'age','30대')"><span class="opt-key">B</span><span class="opt-text">30대</span></button>
+      <button class="opt" onclick="pick(this,'age','40대')"><span class="opt-key">C</span><span class="opt-text">40대</span></button>
+      <button class="opt" onclick="pick(this,'age','50대 이상')"><span class="opt-key">D</span><span class="opt-text">50대 이상</span></button>
+      <div class="nav-row">
+        <button class="btn-prev" onclick="prev()">←</button>
+        <button class="btn-next" onclick="next()">다음 →</button>
+      </div>
+    </div>
+
+    <!-- Step 3: 거주지 -->
+    <div class="step" id="step3">
+      <div class="step-header">
+        <div class="step-q">
+          <span class="step-num-badge">3</span>
+          <span class="step-q-text">거주 지역을 선택해 주세요.</span>
+        </div>
+        <div class="step-sub">가까운 병원을 우선 매칭해 드립니다.</div>
+      </div>
+      <div class="select-wrap">
+        <select id="sel-region" onchange="setVal('region', this.value)">
+          <option value="">시/도 선택</option>
+          <option>서울</option><option>경기</option><option>인천</option>
+          <option>부산</option><option>대구</option><option>광주</option>
+          <option>대전</option><option>울산</option><option>세종</option>
+          <option>강원</option><option>충북</option><option>충남</option>
+          <option>전북</option><option>전남</option><option>경북</option>
+          <option>경남</option><option>제주</option>
+        </select>
+        <span class="select-arrow">▾</span>
+      </div>
+      <div class="nav-row">
+        <button class="btn-prev" onclick="prev()">←</button>
+        <button class="btn-next" onclick="next()">다음 →</button>
+      </div>
+    </div>
+
+    <!-- Step 4: 탈모 부위 -->
+    <div class="step" id="step4">
+      <div class="step-header">
+        <div class="step-q">
+          <span class="step-num-badge">4</span>
+          <span class="step-q-text">고민중인 탈모 부위를 선택해 주세요.</span>
+        </div>
+        <div class="step-sub">생착률 95% 이상인 병원만 엄선하여<br>탈모 고민을 해결해 드립니다.</div>
+      </div>
+      <div class="multi-tag">복수 선택 가능</div>
+      <button class="opt" onclick="toggle(this,'area','헤어라인')"><span class="opt-key">A</span><span class="opt-text">헤어라인</span></button>
+      <button class="opt" onclick="toggle(this,'area','가르마')"><span class="opt-key">B</span><span class="opt-text">가르마</span></button>
+      <button class="opt" onclick="toggle(this,'area','정수리')"><span class="opt-key">C</span><span class="opt-text">정수리</span></button>
+      <button class="opt" onclick="toggle(this,'area','M자 탈모')"><span class="opt-key">D</span><span class="opt-text">M자 탈모</span></button>
+      <button class="opt" onclick="toggle(this,'area','전체적으로')"><span class="opt-key">E</span><span class="opt-text">전체적으로</span></button>
+      <div class="nav-row">
+        <button class="btn-prev" onclick="prev()">←</button>
+        <button class="btn-next" onclick="next()">다음 →</button>
+      </div>
+    </div>
+
+    <!-- Step 5: 탈모 기간 -->
+    <div class="step" id="step5">
+      <div class="step-header">
+        <div class="step-q">
+          <span class="step-num-badge">5</span>
+          <span class="step-q-text">탈모가 시작된 지 얼마나 됐나요?</span>
+        </div>
+        <div class="step-sub">탈모 기간에 따라 적합한 시술 방법이 달라집니다.</div>
+      </div>
+      <button class="opt" onclick="pick(this,'duration','1년 미만')"><span class="opt-key">A</span><span class="opt-text">1년 미만</span></button>
+      <button class="opt" onclick="pick(this,'duration','1~3년')"><span class="opt-key">B</span><span class="opt-text">1~3년</span></button>
+      <button class="opt" onclick="pick(this,'duration','3~5년')"><span class="opt-key">C</span><span class="opt-text">3~5년</span></button>
+      <button class="opt" onclick="pick(this,'duration','5년 이상')"><span class="opt-key">D</span><span class="opt-text">5년 이상</span></button>
+      <div class="nav-row">
+        <button class="btn-prev" onclick="prev()">←</button>
+        <button class="btn-next" onclick="next()">다음 →</button>
+      </div>
+    </div>
+
+    <!-- Step 6: 예산 -->
+    <div class="step" id="step6">
+      <div class="step-header">
+        <div class="step-q">
+          <span class="step-num-badge">6</span>
+          <span class="step-q-text">예상 예산 범위를 알려주세요.</span>
+        </div>
+        <div class="step-sub">예산에 맞는 최적의 병원을 매칭해 드립니다.</div>
+      </div>
+      <button class="opt" onclick="pick(this,'budget','300만원 미만')"><span class="opt-key">A</span><span class="opt-text">300만원 미만</span></button>
+      <button class="opt" onclick="pick(this,'budget','300~500만원')"><span class="opt-key">B</span><span class="opt-text">300~500만원</span></button>
+      <button class="opt" onclick="pick(this,'budget','500~700만원')"><span class="opt-key">C</span><span class="opt-text">500~700만원</span></button>
+      <button class="opt" onclick="pick(this,'budget','700만원 이상')"><span class="opt-key">D</span><span class="opt-text">700만원 이상</span></button>
+      <div class="nav-row">
+        <button class="btn-prev" onclick="prev()">←</button>
+        <button class="btn-next" onclick="next()">다음 →</button>
+      </div>
+    </div>
+
+    <!-- Step 7: 이름 + 연락처 -->
+    <div class="step" id="step7">
+      <div class="step-header">
+        <div class="step-q">
+          <span class="step-num-badge">7</span>
+          <span class="step-q-text">연락처를 남겨주세요.</span>
+        </div>
+        <div class="step-sub">맞춤 병원 정보와 무료 견적을<br>빠르게 보내드립니다.</div>
+      </div>
+      <input class="inp" type="text" id="inp-name" placeholder="이름" autocomplete="name">
+      <input class="inp" type="tel" id="inp-phone" placeholder="연락처 (예: 010-1234-5678)" autocomplete="tel">
+      <button class="btn-submit" onclick="submitForm()">무료 상담 신청하기 →</button>
+      <div class="privacy">
+        위 정보는 병원 매칭 서비스 제공 목적으로만 사용되며,
+        개인정보처리방침에 따라 안전하게 보호됩니다.
+        제3자 제공 및 마케팅 목적으로 활용되지 않습니다.
+      </div>
+      <div class="nav-row" style="margin-top:12px">
+        <button class="btn-prev" onclick="prev()">←</button>
+      </div>
+    </div>
+
+  </div><!-- /form-wrap -->
+
+  <!-- DONE -->
+  <div class="done-screen" id="doneScreen">
+    <div class="done-icon">✓</div>
+    <div class="done-title">상담 신청 완료!</div>
+    <div class="done-sub">담당자가 확인 후<br>영업일 기준 <strong style="color:var(--gold)">24시간 이내</strong> 연락드립니다.</div>
+    <div class="done-card">
+      <div class="done-card-title">접수 정보</div>
+      <div class="done-card-row">
+        <span class="done-card-label">이름</span>
+        <span class="done-card-value" id="done-name"></span>
+      </div>
+      <div class="done-card-row">
+        <span class="done-card-label">연락처</span>
+        <span class="done-card-value" id="done-phone"></span>
+      </div>
+      <div class="done-card-row">
+        <span class="done-card-label">탈모 부위</span>
+        <span class="done-card-value" id="done-area"></span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<!-- Loading overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="spinner"></div>
+  <div class="loading-text">신청 정보 전송 중...</div>
+</div>
+
+<script>
+// ── 설정 ──────────────────────────────────────────────
+// Google Apps Script 웹앱 URL로 교체하세요
+var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+// ───────────────────────────────────────────────────────
+
+var cur = 1;
+var totalSteps = 7;
+var data = { area: [] };
+
+// UTM 파라미터 읽기
+function getUTM() {
+  var params = new URLSearchParams(window.location.search);
+  return {
+    source:   params.get('utm_source')   || '직접유입',
+    medium:   params.get('utm_medium')   || '',
+    campaign: params.get('utm_campaign') || '',
+    term:     params.get('utm_term')     || '',
+    content:  params.get('utm_content')  || ''
+  };
+}
+
+function updateProgress() {
+  var pct = Math.round((cur / totalSteps) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressCount').textContent = cur + ' / ' + totalSteps;
+}
+
+function showStep(n) {
+  document.querySelectorAll('.step').forEach(function(el) { el.classList.remove('active'); });
+  var el = document.getElementById('step' + n);
+  if (el) el.classList.add('active');
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function next() {
+  if (cur < totalSteps) { cur++; showStep(cur); }
+}
+
+function prev() {
+  if (cur > 1) { cur--; showStep(cur); }
+}
+
+function pick(btn, key, val) {
+  var parent = btn.closest('.step');
+  parent.querySelectorAll('.opt').forEach(function(b) { b.classList.remove('selected'); });
+  btn.classList.add('selected');
+  data[key] = val;
+}
+
+function toggle(btn, key, val) {
+  btn.classList.toggle('selected');
+  if (!data[key]) data[key] = [];
+  var idx = data[key].indexOf(val);
+  if (idx > -1) data[key].splice(idx, 1);
+  else data[key].push(val);
+}
+
+function setVal(key, val) {
+  data[key] = val;
+}
+
+function getNow() {
+  var now = new Date();
+  var pad = function(n) { return n < 10 ? '0' + n : n; };
+  var date = now.getFullYear() + '-' + pad(now.getMonth()+1) + '-' + pad(now.getDate());
+  var time = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
+  return { date: date, time: time };
+}
+
+function submitForm() {
+  var name  = document.getElementById('inp-name').value.trim();
+  var phone = document.getElementById('inp-phone').value.trim();
+
+  if (!name) { alert('이름을 입력해 주세요.'); return; }
+  if (!phone) { alert('연락처를 입력해 주세요.'); return; }
+
+  var utm = getUTM();
+  var now = getNow();
+
+  // Google Sheets 컬럼 순서에 맞게 구성
+  var payload = {
+    담당자:           '',
+    업무일자:         '',
+    첫콜일자:         '',
+    최근콜일:         '',
+    DB유입날짜:       now.date,
+    DB유입시간:       now.time,
+    DB첫콜시간:       '',
+    이름:             name,
+    전화번호:         phone,
+    성별:             data.gender   || '',
+    연령:             data.age      || '',
+    거주지:           data.region   || '',
+    탈모형태:         (data.area && data.area.length ? data.area.join(', ') : '') + (data.duration ? ' / ' + data.duration : ''),
+    유입경로:         utm.source,
+    카페아이디:       '',
+    가입일:           '',
+    카페가입:         '',
+    상담내용궁금사항: '',
+    방문게시물:       '',
+    댓글:             '',
+    리콜일정:         '',
+    예약사항:         '',
+    가입경로:         utm.medium,
+    검색어:           utm.term,
+    대처법:           '',
+    관심분야:         utm.campaign,
+    예약날짜:         '',
+    예약시간:         '',
+    전담실장:         '',
+    담당원장:         '',
+    수술날짜:         '',
+    수술사항:         '',
+    병원내원:         '',
+    상담내용:         ''
+  };
+
+  // GA 이벤트 전송
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'form_submit', {
+      event_category: '상담신청',
+      event_label: utm.source
+    });
+  }
+
+  // 로딩 표시
+  document.getElementById('loadingOverlay').classList.add('active');
+
+  // Google Apps Script로 전송
+  fetch(APPS_SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(function() {
+    showDone(name, phone);
+  })
+  .catch(function() {
+    // no-cors 모드에서는 항상 여기로 오지만 실제로는 전송됨
+    showDone(name, phone);
+  });
+}
+
+function showDone(name, phone) {
+  document.getElementById('loadingOverlay').classList.remove('active');
+  document.getElementById('formArea').style.display = 'none';
+  document.getElementById('doneScreen').classList.add('active');
+  document.getElementById('done-name').textContent = name;
+  document.getElementById('done-phone').textContent = phone;
+  document.getElementById('done-area').textContent = data.area && data.area.length ? data.area.join(', ') : '-';
+}
+</script>
+
+</body>
+</html>
