@@ -38,15 +38,15 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   background: var(--black);
   color: var(--text);
-  min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .page {
   max-width: 480px;
   margin: 0 auto;
   background: var(--black);
-  min-height: 100vh;
   position: relative;
 }
 
@@ -73,10 +73,18 @@ body {
 /* 비포애프터 영역 - 실제 이미지로 교체 가능 */
 .ba-container {
   width: 100%;
-  height: 260px;
+  height: 350px;
   display: flex;
   position: relative;
   overflow: hidden;
+}
+
+.ba-full-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
 
 .ba-side {
@@ -641,26 +649,16 @@ body {
 
   <!-- HERO -->
   <div class="hero">
-    <!-- 비포애프터 이미지 영역 -->
-    <!-- 실제 사용 시: before.jpg, after.jpg 파일을 같은 폴더에 넣고 아래 placeholder를 img 태그로 교체 -->
-    <div class="ba-container">
-      <div class="ba-side before">
-        <span class="ba-side-label">BEFORE</span>
-        <div class="ba-placeholder">
-          <div class="ba-placeholder-circle">📷</div>
-          <div class="ba-placeholder-text">비포 이미지<br>교체 예정</div>
-        </div>
+    <!-- 이미지: 1.jpg~6.jpg 를 index.html과 같은 폴더에 업로드 → 스텝 이동시 자동 교체 -->
+    <div class="ba-container" style="position:relative;">
+      <img id="stepImg" src="1.jpg" class="ba-full-img"
+           onerror="this.src='1.png'; this.onerror=function(){this.style.display='none'; document.getElementById('stepImgPlaceholder').style.display='flex';};"
+           style="transition: opacity 0.4s ease;">
+      <div id="stepImgPlaceholder" style="display:none; width:100%; height:350px; background:#1a1a1a; align-items:center; justify-content:center; flex-direction:column; gap:8px; opacity:0.4;">
+        <div style="font-size:32px;">📷</div>
+        <div style="font-size:12px; color:#555;">1.jpg ~ 6.jpg 업로드</div>
       </div>
-      <div class="ba-divider">
-        <svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7"/></svg>
-      </div>
-      <div class="ba-side after">
-        <span class="ba-side-label">AFTER</span>
-        <div class="ba-placeholder">
-          <div class="ba-placeholder-circle">✨</div>
-          <div class="ba-placeholder-text">애프터 이미지<br>교체 예정</div>
-        </div>
-      </div>
+      <div id="stepImgNum" style="position:absolute; top:12px; right:12px; background:rgba(0,0,0,0.6); color:var(--gold); font-size:11px; font-weight:700; padding:4px 10px; border-radius:20px; letter-spacing:1px;"></div>
     </div>
 
     <div class="hero-text">
@@ -677,7 +675,7 @@ body {
       <div class="trust-label">생착률 보장</div>
     </div>
     <div class="trust-item">
-      <div class="trust-num">1,200+</div>
+      <div class="trust-num">10,000+</div>
       <div class="trust-label">성공 케이스</div>
     </div>
     <div class="trust-item">
@@ -692,10 +690,10 @@ body {
     <div class="progress-wrap">
       <div class="progress-info">
         <span class="progress-label">상담 정보 입력</span>
-        <span class="progress-count" id="progressCount">1 / 7</span>
+        <span class="progress-count" id="progressCount">1 / 6</span>
       </div>
       <div class="progress-bar">
-        <div class="progress-fill" id="progressFill" style="width:14%"></div>
+        <div class="progress-fill" id="progressFill" style="width:16%"></div>
       </div>
     </div>
 
@@ -775,7 +773,8 @@ body {
       <button class="opt" onclick="toggle(this,'area','가르마')"><span class="opt-key">B</span><span class="opt-text">가르마</span></button>
       <button class="opt" onclick="toggle(this,'area','정수리')"><span class="opt-key">C</span><span class="opt-text">정수리</span></button>
       <button class="opt" onclick="toggle(this,'area','M자 탈모')"><span class="opt-key">D</span><span class="opt-text">M자 탈모</span></button>
-      <button class="opt" onclick="toggle(this,'area','전체적으로')"><span class="opt-key">E</span><span class="opt-text">전체적으로</span></button>
+      <button class="opt" onclick="toggle(this,'area','수염 / 속눈썹 / 눈썹 / 구레나룻')"><span class="opt-key">E</span><span class="opt-text">수염 / 속눈썹 / 눈썹 / 구레나룻</span></button>
+      <button class="opt" onclick="toggle(this,'area','흉터 / 원형탈모 부위')"><span class="opt-key">F</span><span class="opt-text">흉터 / 원형탈모 부위</span></button>
       <div class="nav-row">
         <button class="btn-prev" onclick="prev()">←</button>
         <button class="btn-next" onclick="next()">다음 →</button>
@@ -801,30 +800,11 @@ body {
       </div>
     </div>
 
-    <!-- Step 6: 예산 -->
+    <!-- Step 6: 이름 + 연락처 -->
     <div class="step" id="step6">
       <div class="step-header">
         <div class="step-q">
           <span class="step-num-badge">6</span>
-          <span class="step-q-text">예상 예산 범위를 알려주세요.</span>
-        </div>
-        <div class="step-sub">예산에 맞는 최적의 병원을 매칭해 드립니다.</div>
-      </div>
-      <button class="opt" onclick="pick(this,'budget','300만원 미만')"><span class="opt-key">A</span><span class="opt-text">300만원 미만</span></button>
-      <button class="opt" onclick="pick(this,'budget','300~500만원')"><span class="opt-key">B</span><span class="opt-text">300~500만원</span></button>
-      <button class="opt" onclick="pick(this,'budget','500~700만원')"><span class="opt-key">C</span><span class="opt-text">500~700만원</span></button>
-      <button class="opt" onclick="pick(this,'budget','700만원 이상')"><span class="opt-key">D</span><span class="opt-text">700만원 이상</span></button>
-      <div class="nav-row">
-        <button class="btn-prev" onclick="prev()">←</button>
-        <button class="btn-next" onclick="next()">다음 →</button>
-      </div>
-    </div>
-
-    <!-- Step 7: 이름 + 연락처 -->
-    <div class="step" id="step7">
-      <div class="step-header">
-        <div class="step-q">
-          <span class="step-num-badge">7</span>
           <span class="step-q-text">연락처를 남겨주세요.</span>
         </div>
         <div class="step-sub">맞춤 병원 정보와 무료 견적을<br>빠르게 보내드립니다.</div>
@@ -881,7 +861,7 @@ var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
 // ───────────────────────────────────────────────────────
 
 var cur = 1;
-var totalSteps = 7;
+var totalSteps = 6;
 var data = { area: [] };
 
 // UTM 파라미터 읽기
@@ -907,7 +887,37 @@ function showStep(n) {
   var el = document.getElementById('step' + n);
   if (el) el.classList.add('active');
   updateProgress();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  updateStepImage(n);
+}
+
+function updateStepImage(n) {
+  var img = document.getElementById('stepImg');
+  var placeholder = document.getElementById('stepImgPlaceholder');
+  var badge = document.getElementById('stepImgNum');
+  if (!img) return;
+  img.style.opacity = '0';
+  setTimeout(function() {
+    var tryExts = ['jpg', 'png', 'jpeg', 'webp'];
+    var tried = 0;
+    function tryNext() {
+      if (tried >= tryExts.length) {
+        img.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'flex';
+        return;
+      }
+      var ext = tryExts[tried++];
+      img.onerror = tryNext;
+      img.src = n + '.' + ext;
+    }
+    img.onload = function() {
+      img.style.display = 'block';
+      if (placeholder) placeholder.style.display = 'none';
+      img.style.opacity = '1';
+      img.onerror = null;
+    };
+    tryNext();
+  }, 200);
+  if (badge) badge.textContent = n + ' / 6';
 }
 
 function next() {
